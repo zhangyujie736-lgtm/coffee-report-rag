@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+data/pdfs/
+data/model/
+data/pages/
+data/index/
+data/evaluation_raw.json
+__pycache__/
+.venv/
+*.log
+.state/

@@ -1,0 +1,16 @@
+{
+  "chunks": 16300,
+  "vector_dimensions": 384,
+  "embedding_model": "Xenova/multilingual-e5-small",
+  "prefixes": [
+    "query:",
+    "passage:"
+  ],
+  "pooling": "masked mean + L2",
+  "onnx": "int8 quantized",
+  "max_tokens": 384,
+  "rrf_k": 60,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "seconds": 4.3
+}

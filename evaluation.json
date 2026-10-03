@@ -1,0 +1,5202 @@
+[
+  {
+    "id": "Q01",
+    "type": "单公司表格",
+    "question": "佳禾食品2025年营业收入和归母净利润是多少？",
+    "expected": "营业收入 2,256,020,464.09 元；归母净利润 30,796,286.38 元。依据巨潮年报 PDF 第 8 页。",
+    "gold_pages": {
+      "605300": [
+        8
+      ]
+    },
+    "gold_values": [
+      2256020464.09,
+      30796286.38
+    ],
+    "verdict": "通过",
+    "actual": "收入 2,256,020,464.09 元、归母净利润 30,796,286.38 元，均引用 PDF p.8 的表格行。",
+    "error": "金额及人民币元口径一致；参考页和回答引用一致。",
+    "recalled": [
+      {
+        "id": "605300-p8-t2-r1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9122813940048218
+      },
+      {
+        "id": "605300-p8-t2-r9",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.900382399559021
+      },
+      {
+        "id": "605300-p9-t2-r1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 3,
+        "rrf": 0.031746031746031744,
+        "cosine": 0.882952094078064
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "605300-p8-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9122813940048218
+          },
+          {
+            "id": "605300-p8-t2-r9",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.900382399559021
+          },
+          {
+            "id": "605300-p9-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.882952094078064
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "605300-p8-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9122813940048218
+          },
+          {
+            "id": "605300-p8-t2-r9",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.900382399559021
+          },
+          {
+            "id": "605300-p9-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.882952094078064
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "605300-p8-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9122813940048218
+          },
+          {
+            "id": "605300-p8-t2-r9",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.900382399559021
+          },
+          {
+            "id": "605300-p9-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.031746031746031744,
+            "cosine": 0.882952094078064
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q02",
+    "type": "单公司表格",
+    "question": "新乳业2025年营业收入是多少，同比增长多少？",
+    "expected": "收入 11,233,457,712.85 元，同比增长 5.33%。依据巨潮年报 PDF 第 9 页。",
+    "gold_pages": {
+      "002946": [
+        9
+      ]
+    },
+    "gold_values": [
+      11233457712.85
+    ],
+    "verdict": "通过",
+    "actual": "收入 11,233,457,712.85 元；金额重算同比 5.33%。",
+    "error": "原始表存在空列和多行行名；保留原表，并只连接行名片段，不填补数值。",
+    "recalled": [
+      {
+        "id": "002946-p10-t2-r9",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 1,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9167287945747375
+      },
+      {
+        "id": "002946-p9-t3-r1",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 3,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.9150453209877014
+      },
+      {
+        "id": "002946-p9-t3-r9",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 2,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.9155094027519226
+      },
+      {
+        "id": "002946-p9-t3-r17",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 5,
+        "rrf": 0.03125763125763126,
+        "cosine": 0.9012753367424011
+      },
+      {
+        "id": "002946-p10-t2-r1",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 4,
+        "rrf": 0.031009615384615385,
+        "cosine": 0.9084725379943848
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9150453209877014
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9167287945747375
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9012753367424011
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.015625,
+            "cosine": 0.9155094027519226
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9084725379943848
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9167287945747375
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9155094027519226
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9150453209877014
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9084725379943848
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9012753367424011
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9167287945747375
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.9150453209877014
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.9155094027519226
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.03125763125763126,
+            "cosine": 0.9012753367424011
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.031009615384615385,
+            "cosine": 0.9084725379943848
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q03",
+    "type": "现金流表格",
+    "question": "海融科技2025年经营活动产生的现金流量净额是多少？",
+    "expected": "经营现金流量净额 3,812,310.48 元。依据巨潮年报 PDF 第 8 页。",
+    "gold_pages": {
+      "300915": [
+        8
+      ]
+    },
+    "gold_values": [
+      3812310.48
+    ],
+    "verdict": "通过",
+    "actual": "经营现金流量净额 3,812,310.48 元，引用 PDF p.8。",
+    "error": "避免把现金流入小计当作净额；金额与参考表一致。",
+    "recalled": [
+      {
+        "id": "300915-p8-t1-r1",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9144430160522461
+      },
+      {
+        "id": "300915-p9-t1-r1",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 3,
+        "rrf": 0.03200204813108039,
+        "cosine": 0.9097827672958374
+      },
+      {
+        "id": "300915-p8-t1-r9",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 2,
+        "rrf": 0.0315136476426799,
+        "cosine": 0.9116182327270508
+      },
+      {
+        "id": "300915-p9-t1-r9",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 4,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9088073372840881
+      },
+      {
+        "id": "300915-p8-t2-r1",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 5,
+        "rrf": 0.031009615384615385,
+        "cosine": 0.9067338109016418
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "300915-p8-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9144430160522461
+          },
+          {
+            "id": "300915-p9-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 3,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9097827672958374
+          },
+          {
+            "id": "300915-p9-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9088073372840881
+          },
+          {
+            "id": "300915-p8-t2-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 5,
+            "rrf": 0.015625,
+            "cosine": 0.9067338109016418
+          },
+          {
+            "id": "300915-p8-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 2,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9116182327270508
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "300915-p8-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9144430160522461
+          },
+          {
+            "id": "300915-p8-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9116182327270508
+          },
+          {
+            "id": "300915-p9-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9097827672958374
+          },
+          {
+            "id": "300915-p9-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9088073372840881
+          },
+          {
+            "id": "300915-p8-t2-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9067338109016418
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "300915-p8-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9144430160522461
+          },
+          {
+            "id": "300915-p9-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 3,
+            "rrf": 0.03200204813108039,
+            "cosine": 0.9097827672958374
+          },
+          {
+            "id": "300915-p8-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 2,
+            "rrf": 0.0315136476426799,
+            "cosine": 0.9116182327270508
+          },
+          {
+            "id": "300915-p9-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9088073372840881
+          },
+          {
+            "id": "300915-p8-t2-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 5,
+            "rrf": 0.031009615384615385,
+            "cosine": 0.9067338109016418
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q04",
+    "type": "产品细分表格",
+    "question": "香飘飘2025年即饮类营业收入和毛利率分别是多少？",
+    "expected": "即饮类收入 1,005,071,661.49 元；毛利率 25.03%。不能替换为公司总收入。依据 PDF 第 18 页。",
+    "gold_pages": {
+      "603711": [
+        18
+      ]
+    },
+    "gold_values": [],
+    "verdict": "通过",
+    "actual": "原文摘录提供即饮类收入 1,005,071,661.49 元、毛利率 25.03%，引用 p.18、p.30。",
+    "error": "首条摘录末尾被长度截断，后续摘录和完整表格补足答案。可读性欠佳，但未错用公司总收入。",
+    "recalled": [
+      {
+        "id": "603711-p18-t1-r1",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 18,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9224237203598022
+      },
+      {
+        "id": "603711-p30-t3-r1",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 30,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 2,
+        "rrf": 0.03200204813108039,
+        "cosine": 0.9199640154838562
+      },
+      {
+        "id": "603711-p18-x3",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 18,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 2,
+        "vector_rank": 7,
+        "rrf": 0.031054405392392875,
+        "cosine": 0.9145406484603882
+      },
+      {
+        "id": "603711-p30-x3",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 30,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 6,
+        "vector_rank": 3,
+        "rrf": 0.031024531024531024,
+        "cosine": 0.9178856611251831
+      },
+      {
+        "id": "603711-p30-t2-r1",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 30,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 5,
+        "rrf": 0.03076923076923077,
+        "cosine": 0.9167835116386414
+      },
+      {
+        "id": "603711-p18-x2",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 18,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 4,
+        "vector_rank": 11,
+        "rrf": 0.029709507042253523,
+        "cosine": 0.9065700769424438
+      },
+      {
+        "id": "603711-p20-t1-r1",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 20,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 17,
+        "vector_rank": 6,
+        "rrf": 0.02813852813852814,
+        "cosine": 0.9154579639434814
+      },
+      {
+        "id": "603711-p18-t1-r17",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 18,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 11,
+        "vector_rank": 17,
+        "rrf": 0.027071520029266508,
+        "cosine": 0.902229905128479
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "603711-p18-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9224237203598022
+          },
+          {
+            "id": "603711-p18-x3",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 7,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9145406484603882
+          },
+          {
+            "id": "603711-p30-t3-r1",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 2,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9199640154838562
+          },
+          {
+            "id": "603711-p18-x2",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 11,
+            "rrf": 0.015625,
+            "cosine": 0.9065700769424438
+          },
+          {
+            "id": "603711-p30-t2-r1",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9167835116386414
+          },
+          {
+            "id": "603711-p30-x3",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 3,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.9178856611251831
+          },
+          {
+            "id": "603711-p18-x6",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": null,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.8885735273361206
+          },
+          {
+            "id": "603711-p30-t3-r9",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 8,
+            "vector_rank": null,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.8901044130325317
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "603711-p18-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9224237203598022
+          },
+          {
+            "id": "603711-p30-t3-r1",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9199640154838562
+          },
+          {
+            "id": "603711-p30-x3",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9178856611251831
+          },
+          {
+            "id": "603711-p37-x3",
+            "company": "香飘飘",
+            "pdf_page": 37,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9169536828994751
+          },
+          {
+            "id": "603711-p30-t2-r1",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9167835116386414
+          },
+          {
+            "id": "603711-p20-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 20,
+            "kind": "table",
+            "bm25_rank": 17,
+            "vector_rank": 6,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.9154579639434814
+          },
+          {
+            "id": "603711-p18-x3",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 7,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.9145406484603882
+          },
+          {
+            "id": "603711-p14-x2",
+            "company": "香飘飘",
+            "pdf_page": 14,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 8,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.9114705324172974
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "603711-p18-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9224237203598022
+          },
+          {
+            "id": "603711-p30-t3-r1",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 2,
+            "rrf": 0.03200204813108039,
+            "cosine": 0.9199640154838562
+          },
+          {
+            "id": "603711-p18-x3",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 7,
+            "rrf": 0.031054405392392875,
+            "cosine": 0.9145406484603882
+          },
+          {
+            "id": "603711-p30-x3",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 3,
+            "rrf": 0.031024531024531024,
+            "cosine": 0.9178856611251831
+          },
+          {
+            "id": "603711-p30-t2-r1",
+            "company": "香飘飘",
+            "pdf_page": 30,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.03076923076923077,
+            "cosine": 0.9167835116386414
+          },
+          {
+            "id": "603711-p18-x2",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 11,
+            "rrf": 0.029709507042253523,
+            "cosine": 0.9065700769424438
+          },
+          {
+            "id": "603711-p20-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 20,
+            "kind": "table",
+            "bm25_rank": 17,
+            "vector_rank": 6,
+            "rrf": 0.02813852813852814,
+            "cosine": 0.9154579639434814
+          },
+          {
+            "id": "603711-p18-t1-r17",
+            "company": "香飘飘",
+            "pdf_page": 18,
+            "kind": "table",
+            "bm25_rank": 11,
+            "vector_rank": 17,
+            "rrf": 0.027071520029266508,
+            "cosine": 0.902229905128479
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q05",
+    "type": "中英跨语言",
+    "question": "瑞幸咖啡2025年末全球门店总数是多少？",
+    "expected": "全球 31,048 家。PDF 第 19、72、108 页均可核对；31,048 是门店总数，不能混淆中国内地/含香港口径或自营店。",
+    "gold_pages": {
+      "LKNCY": [
+        19,
+        72,
+        108
+      ]
+    },
+    "gold_values": [],
+    "verdict": "通过",
+    "actual": "首条英文原文明确给出全球门店 31,048 家，引用 p.19；p.72 提供另一处验证。",
+    "error": "中英术语映射后检索到原文；输出仍为英文摘录，未自动翻译。",
+    "recalled": [
+      {
+        "id": "LKNCY-p19-x7",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 19,
+        "section": "Item 3. Key Information",
+        "kind": "text",
+        "bm25_rank": 3,
+        "vector_rank": 1,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.9124587774276733
+      },
+      {
+        "id": "LKNCY-p72-x7",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 72,
+        "section": "Item 4. Information on the Company",
+        "kind": "text",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9048364162445068
+      },
+      {
+        "id": "LKNCY-p73-x4",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 73,
+        "section": "Item 4. Information on the Company",
+        "kind": "text",
+        "bm25_rank": 1,
+        "vector_rank": 9,
+        "rrf": 0.030886196246139225,
+        "cosine": 0.895832896232605
+      },
+      {
+        "id": "LKNCY-p73-x5",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 73,
+        "section": "Item 4. Information on the Company",
+        "kind": "text",
+        "bm25_rank": 7,
+        "vector_rank": 5,
+        "rrf": 0.030309988518943745,
+        "cosine": 0.8984808921813965
+      },
+      {
+        "id": "LKNCY-p74-x1",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 74,
+        "section": "Item 4. Information on the Company",
+        "kind": "text",
+        "bm25_rank": 5,
+        "vector_rank": 8,
+        "rrf": 0.030090497737556562,
+        "cosine": 0.8965721726417542
+      },
+      {
+        "id": "LKNCY-p74-x6",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 74,
+        "section": "Item 4. Information on the Company",
+        "kind": "text",
+        "bm25_rank": 10,
+        "vector_rank": 6,
+        "rrf": 0.029437229437229435,
+        "cosine": 0.8976597189903259
+      },
+      {
+        "id": "LKNCY-p74-x2",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 74,
+        "section": "Item 4. Information on the Company",
+        "kind": "text",
+        "bm25_rank": 6,
+        "vector_rank": 13,
+        "rrf": 0.028850145288501453,
+        "cosine": 0.8936351537704468
+      },
+      {
+        "id": "LKNCY-p107-x1",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 107,
+        "section": "Item 5. Operating and Financial Review and Prospects",
+        "kind": "text",
+        "bm25_rank": 4,
+        "vector_rank": 16,
+        "rrf": 0.028782894736842105,
+        "cosine": 0.8919154405593872
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "LKNCY-p73-x4",
+            "company": "瑞幸咖啡",
+            "pdf_page": 73,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": 9,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.895832896232605
+          },
+          {
+            "id": "LKNCY-p72-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 72,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9048364162445068
+          },
+          {
+            "id": "LKNCY-p19-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 19,
+            "kind": "text",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9124587774276733
+          },
+          {
+            "id": "LKNCY-p107-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 107,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 16,
+            "rrf": 0.015625,
+            "cosine": 0.8919154405593872
+          },
+          {
+            "id": "LKNCY-p74-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 5,
+            "vector_rank": 8,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8965721726417542
+          },
+          {
+            "id": "LKNCY-p74-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 13,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8936351537704468
+          },
+          {
+            "id": "LKNCY-p73-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 73,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": 5,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.8984808921813965
+          },
+          {
+            "id": "LKNCY-p115-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 115,
+            "kind": "text",
+            "bm25_rank": 8,
+            "vector_rank": null,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.8804877996444702
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "LKNCY-p19-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 19,
+            "kind": "text",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9124587774276733
+          },
+          {
+            "id": "LKNCY-p72-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 72,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9048364162445068
+          },
+          {
+            "id": "LKNCY-p210-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 210,
+            "kind": "text",
+            "bm25_rank": 32,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9019203782081604
+          },
+          {
+            "id": "LKNCY-p106-x4",
+            "company": "瑞幸咖啡",
+            "pdf_page": 106,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.8987534046173096
+          },
+          {
+            "id": "LKNCY-p73-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 73,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8984808921813965
+          },
+          {
+            "id": "LKNCY-p74-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 10,
+            "vector_rank": 6,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8976597189903259
+          },
+          {
+            "id": "LKNCY-p107-x3",
+            "company": "瑞幸咖啡",
+            "pdf_page": 107,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 7,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.896798312664032
+          },
+          {
+            "id": "LKNCY-p74-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 5,
+            "vector_rank": 8,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.8965721726417542
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "LKNCY-p19-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 19,
+            "kind": "text",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.9124587774276733
+          },
+          {
+            "id": "LKNCY-p72-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 72,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9048364162445068
+          },
+          {
+            "id": "LKNCY-p73-x4",
+            "company": "瑞幸咖啡",
+            "pdf_page": 73,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": 9,
+            "rrf": 0.030886196246139225,
+            "cosine": 0.895832896232605
+          },
+          {
+            "id": "LKNCY-p73-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 73,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": 5,
+            "rrf": 0.030309988518943745,
+            "cosine": 0.8984808921813965
+          },
+          {
+            "id": "LKNCY-p74-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 5,
+            "vector_rank": 8,
+            "rrf": 0.030090497737556562,
+            "cosine": 0.8965721726417542
+          },
+          {
+            "id": "LKNCY-p74-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 10,
+            "vector_rank": 6,
+            "rrf": 0.029437229437229435,
+            "cosine": 0.8976597189903259
+          },
+          {
+            "id": "LKNCY-p74-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 74,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 13,
+            "rrf": 0.028850145288501453,
+            "cosine": 0.8936351537704468
+          },
+          {
+            "id": "LKNCY-p107-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 107,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 16,
+            "rrf": 0.028782894736842105,
+            "cosine": 0.8919154405593872
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q06",
+    "type": "正文业务",
+    "question": "佳禾食品的咖啡业务包括哪些产品？",
+    "expected": "焙烤咖啡豆、研磨咖啡粉、热萃咖啡液、冷萃咖啡液、冻干咖啡、速溶咖啡、咖啡固体饮料等。依据 PDF 第 12 页咖啡业务。",
+    "gold_pages": {
+      "605300": [
+        12
+      ]
+    },
+    "gold_values": [],
+    "verdict": "通过",
+    "actual": "咖啡豆、咖啡粉、热萃/冷萃咖啡液、冻干/速溶咖啡及固体饮料，均在首条 p.12 摘录。",
+    "error": "后续摘录含 C 端产品与子公司表；不能把后者的万元数据与公司元数据直接比较。",
+    "recalled": [
+      {
+        "id": "605300-p12-x3",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 12,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.8873310089111328
+      },
+      {
+        "id": "605300-p12-x4",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 12,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 1,
+        "vector_rank": 5,
+        "rrf": 0.03177805800756621,
+        "cosine": 0.8783623576164246
+      },
+      {
+        "id": "605300-p37-t1-r1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 37,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 3,
+        "rrf": 0.03125763125763126,
+        "cosine": 0.8864121437072754
+      },
+      {
+        "id": "605300-p41-x2",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 41,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 6,
+        "vector_rank": 12,
+        "rrf": 0.02904040404040404,
+        "cosine": 0.8764411807060242
+      },
+      {
+        "id": "605300-p40-x1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 40,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 15,
+        "vector_rank": 10,
+        "rrf": 0.02761904761904762,
+        "cosine": 0.8766198754310608
+      },
+      {
+        "id": "605300-p21-x1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 21,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 8,
+        "vector_rank": 18,
+        "rrf": 0.027526395173453996,
+        "cosine": 0.8720806837081909
+      },
+      {
+        "id": "605300-p19-x3",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 19,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 25,
+        "vector_rank": 6,
+        "rrf": 0.026916221033868093,
+        "cosine": 0.8775904178619385
+      },
+      {
+        "id": "605300-p19-x2",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 19,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "text",
+        "bm25_rank": 22,
+        "vector_rank": 9,
+        "rrf": 0.026687875574407917,
+        "cosine": 0.8767882585525513
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "605300-p12-x4",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": 5,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.8783623576164246
+          },
+          {
+            "id": "605300-p12-x3",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8873310089111328
+          },
+          {
+            "id": "605300-p12-x1",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 3,
+            "vector_rank": null,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.850684404373169
+          },
+          {
+            "id": "605300-p13-x1",
+            "company": "佳禾食品",
+            "pdf_page": 13,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 31,
+            "rrf": 0.015625,
+            "cosine": 0.8661981821060181
+          },
+          {
+            "id": "605300-p37-t1-r1",
+            "company": "佳禾食品",
+            "pdf_page": 37,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 3,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8864121437072754
+          },
+          {
+            "id": "605300-p41-x2",
+            "company": "佳禾食品",
+            "pdf_page": 41,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 12,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8764411807060242
+          },
+          {
+            "id": "605300-p37-x2",
+            "company": "佳禾食品",
+            "pdf_page": 37,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": null,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.8588026762008667
+          },
+          {
+            "id": "605300-p21-x1",
+            "company": "佳禾食品",
+            "pdf_page": 21,
+            "kind": "text",
+            "bm25_rank": 8,
+            "vector_rank": 18,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.8720806837081909
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "605300-p21-x2",
+            "company": "佳禾食品",
+            "pdf_page": 21,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.8887577652931213
+          },
+          {
+            "id": "605300-p12-x3",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8873310089111328
+          },
+          {
+            "id": "605300-p37-t1-r1",
+            "company": "佳禾食品",
+            "pdf_page": 37,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8864121437072754
+          },
+          {
+            "id": "605300-p41-x3",
+            "company": "佳禾食品",
+            "pdf_page": 41,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.881465494632721
+          },
+          {
+            "id": "605300-p12-x4",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8783623576164246
+          },
+          {
+            "id": "605300-p19-x3",
+            "company": "佳禾食品",
+            "pdf_page": 19,
+            "kind": "text",
+            "bm25_rank": 25,
+            "vector_rank": 6,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8775904178619385
+          },
+          {
+            "id": "605300-p206-x4",
+            "company": "佳禾食品",
+            "pdf_page": 206,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 7,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.877321720123291
+          },
+          {
+            "id": "605300-p17-x2",
+            "company": "佳禾食品",
+            "pdf_page": 17,
+            "kind": "text",
+            "bm25_rank": 36,
+            "vector_rank": 8,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.877209484577179
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "605300-p12-x3",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.8873310089111328
+          },
+          {
+            "id": "605300-p12-x4",
+            "company": "佳禾食品",
+            "pdf_page": 12,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": 5,
+            "rrf": 0.03177805800756621,
+            "cosine": 0.8783623576164246
+          },
+          {
+            "id": "605300-p37-t1-r1",
+            "company": "佳禾食品",
+            "pdf_page": 37,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 3,
+            "rrf": 0.03125763125763126,
+            "cosine": 0.8864121437072754
+          },
+          {
+            "id": "605300-p41-x2",
+            "company": "佳禾食品",
+            "pdf_page": 41,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 12,
+            "rrf": 0.02904040404040404,
+            "cosine": 0.8764411807060242
+          },
+          {
+            "id": "605300-p40-x1",
+            "company": "佳禾食品",
+            "pdf_page": 40,
+            "kind": "text",
+            "bm25_rank": 15,
+            "vector_rank": 10,
+            "rrf": 0.02761904761904762,
+            "cosine": 0.8766198754310608
+          },
+          {
+            "id": "605300-p21-x1",
+            "company": "佳禾食品",
+            "pdf_page": 21,
+            "kind": "text",
+            "bm25_rank": 8,
+            "vector_rank": 18,
+            "rrf": 0.027526395173453996,
+            "cosine": 0.8720806837081909
+          },
+          {
+            "id": "605300-p19-x3",
+            "company": "佳禾食品",
+            "pdf_page": 19,
+            "kind": "text",
+            "bm25_rank": 25,
+            "vector_rank": 6,
+            "rrf": 0.026916221033868093,
+            "cosine": 0.8775904178619385
+          },
+          {
+            "id": "605300-p19-x2",
+            "company": "佳禾食品",
+            "pdf_page": 19,
+            "kind": "text",
+            "bm25_rank": 22,
+            "vector_rank": 9,
+            "rrf": 0.026687875574407917,
+            "cosine": 0.8767882585525513
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q07",
+    "type": "跨公司全景",
+    "question": "全景比较11家公司2025年营业收入及同比变化",
+    "expected": "覆盖全部 11 家 A 股；燕塘 -8.47%、英联 +12.04%、新乳 +5.33%、海融 -8.18%、新巨丰 +71.61%、安琪 +10.08%、光明 -1.58%、伊利 +0.21%、香飘飘 -11.00%、佳禾 -2.36%、南侨 -2.99%。这是公司总收入，不能当作对瑞幸供货额。",
+    "gold_pages": {
+      "002732": [
+        7
+      ],
+      "002846": [
+        7
+      ],
+      "002946": [
+        9
+      ],
+      "300915": [
+        8
+      ],
+      "301296": [
+        9
+      ],
+      "600298": [
+        6
+      ],
+      "600597": [
+        6
+      ],
+      "600887": [
+        7
+      ],
+      "603711": [
+        6
+      ],
+      "605300": [
+        8
+      ],
+      "605339": [
+        8
+      ]
+    },
+    "gold_values": [],
+    "verdict": "通过",
+    "actual": "11/11 家取得公司总营业收入，逐公司金额及同比均与年报摘要会计表复核一致。",
+    "error": "需要按公司分别召回，并明确过滤到主要财务指标表；是开发集结果，不能外推到任意复杂问题。",
+    "recalled": [
+      {
+        "id": "002732-p7-t2-r1",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9127116203308105
+      },
+      {
+        "id": "002732-p8-t2-r9",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 5,
+        "rrf": 0.03177805800756621,
+        "cosine": 0.9066050052642822
+      },
+      {
+        "id": "002732-p7-t2-r9",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 7,
+        "vector_rank": 1,
+        "rrf": 0.03131881575727918,
+        "cosine": 0.9139963388442993
+      },
+      {
+        "id": "002732-p8-t2-r17",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 6,
+        "vector_rank": 3,
+        "rrf": 0.031024531024531024,
+        "cosine": 0.9120767116546631
+      },
+      {
+        "id": "002732-p8-t2-r1",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 4,
+        "rrf": 0.031009615384615385,
+        "cosine": 0.9094633460044861
+      },
+      {
+        "id": "002846-p7-t2-r1",
+        "company": "英联股份",
+        "code": "002846",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 2,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9128503203392029
+      },
+      {
+        "id": "002846-p8-t2-r1",
+        "company": "英联股份",
+        "code": "002846",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 1,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.9163358211517334
+      },
+      {
+        "id": "002846-p8-t2-r9",
+        "company": "英联股份",
+        "code": "002846",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 4,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.9045637845993042
+      },
+      {
+        "id": "002846-p7-t2-r9",
+        "company": "英联股份",
+        "code": "002846",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 3,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9112789034843445
+      },
+      {
+        "id": "002946-p10-t2-r9",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 1,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9182077646255493
+      },
+      {
+        "id": "002946-p9-t3-r1",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 3,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.9142332077026367
+      },
+      {
+        "id": "002946-p9-t3-r9",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 2,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.9162136316299438
+      },
+      {
+        "id": "002946-p9-t3-r17",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 5,
+        "rrf": 0.03125763125763126,
+        "cosine": 0.8974916934967041
+      },
+      {
+        "id": "002946-p10-t2-r1",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 4,
+        "rrf": 0.031009615384615385,
+        "cosine": 0.9112435579299927
+      },
+      {
+        "id": "300915-p8-t2-r1",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9181742668151855
+      },
+      {
+        "id": "300915-p8-t1-r1",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9143260717391968
+      },
+      {
+        "id": "300915-p9-t1-r9",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 4,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9120726585388184
+      },
+      {
+        "id": "300915-p9-t1-r1",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 3,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9127715826034546
+      },
+      {
+        "id": "300915-p8-t1-r9",
+        "company": "海融科技",
+        "code": "300915",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 5,
+        "rrf": 0.03076923076923077,
+        "cosine": 0.91141676902771
+      },
+      {
+        "id": "301296-p9-t3-r1",
+        "company": "新巨丰",
+        "code": "301296",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9151325225830078
+      },
+      {
+        "id": "301296-p9-t3-r9",
+        "company": "新巨丰",
+        "code": "301296",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 3,
+        "rrf": 0.03200204813108039,
+        "cosine": 0.9079907536506653
+      },
+      {
+        "id": "301296-p10-t2-r1",
+        "company": "新巨丰",
+        "code": "301296",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 2,
+        "rrf": 0.03200204813108039,
+        "cosine": 0.9129527807235718
+      },
+      {
+        "id": "600298-p6-t3-r1",
+        "company": "安琪酵母",
+        "code": "600298",
+        "pdf_page": 6,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9195561408996582
+      },
+      {
+        "id": "600298-p6-t3-r9",
+        "company": "安琪酵母",
+        "code": "600298",
+        "pdf_page": 6,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9172878265380859
+      },
+      {
+        "id": "600298-p9-t1-r1",
+        "company": "安琪酵母",
+        "code": "600298",
+        "pdf_page": 9,
+        "section": "第三节 管理层讨论与分析",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 4,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9044240713119507
+      },
+      {
+        "id": "600298-p7-t3-r1",
+        "company": "安琪酵母",
+        "code": "600298",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 3,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9099286198616028
+      },
+      {
+        "id": "600597-p6-t4-r1",
+        "company": "光明乳业",
+        "code": "600597",
+        "pdf_page": 6,
+        "section": "第二节公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9148020148277283
+      },
+      {
+        "id": "600597-p6-t4-r9",
+        "company": "光明乳业",
+        "code": "600597",
+        "pdf_page": 6,
+        "section": "第二节公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9106045961380005
+      },
+      {
+        "id": "600597-p7-t3-r1",
+        "company": "光明乳业",
+        "code": "600597",
+        "pdf_page": 7,
+        "section": "第二节公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 3,
+        "rrf": 0.031746031746031744,
+        "cosine": 0.9068045616149902
+      },
+      {
+        "id": "600887-p7-t2-r1",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 1,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9198715686798096
+      },
+      {
+        "id": "600887-p7-t2-r9",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 3,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.9109870791435242
+      },
+      {
+        "id": "600887-p8-t2-r1",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 2,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.9126343727111816
+      },
+      {
+        "id": "600887-p8-t2-r9",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 4,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9092017412185669
+      },
+      {
+        "id": "603711-p6-t5-r1",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 6,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 2,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9215083718299866
+      },
+      {
+        "id": "603711-p8-t1-r17",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 1,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.9231441020965576
+      },
+      {
+        "id": "603711-p6-t5-r9",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 6,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 5,
+        "rrf": 0.0315136476426799,
+        "cosine": 0.9138729572296143
+      },
+      {
+        "id": "603711-p8-t1-r1",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 3,
+        "rrf": 0.03125763125763126,
+        "cosine": 0.9158278107643127
+      },
+      {
+        "id": "603711-p8-t1-r9",
+        "company": "香飘飘",
+        "code": "603711",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 4,
+        "rrf": 0.03125,
+        "cosine": 0.9148672819137573
+      },
+      {
+        "id": "605300-p8-t2-r1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 2,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9108182787895203
+      },
+      {
+        "id": "605300-p8-t2-r9",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 1,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9132570028305054
+      },
+      {
+        "id": "605300-p9-t2-r1",
+        "company": "佳禾食品",
+        "code": "605300",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 3,
+        "rrf": 0.031746031746031744,
+        "cosine": 0.9000763297080994
+      },
+      {
+        "id": "605339-p8-t1-r1",
+        "company": "南侨食品",
+        "code": "605339",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9126536250114441
+      },
+      {
+        "id": "605339-p8-t1-r9",
+        "company": "南侨食品",
+        "code": "605339",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9086747765541077
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 11,
+        "gold_company_count": 11,
+        "recall": [
+          {
+            "id": "002732-p8-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 5,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9066050052642822
+          },
+          {
+            "id": "002732-p7-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9127116203308105
+          },
+          {
+            "id": "002732-p11-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 11,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 7,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9023745059967041
+          },
+          {
+            "id": "002732-p12-t3-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 12,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 9,
+            "rrf": 0.015625,
+            "cosine": 0.9011191129684448
+          },
+          {
+            "id": "002732-p8-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9094633460044861
+          },
+          {
+            "id": "002846-p7-t2-r1",
+            "company": "英联股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9128503203392029
+          },
+          {
+            "id": "002846-p8-t2-r9",
+            "company": "英联股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 4,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9045637845993042
+          },
+          {
+            "id": "002846-p8-t2-r1",
+            "company": "英联股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9163358211517334
+          },
+          {
+            "id": "002846-p7-t2-r9",
+            "company": "英联股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015625,
+            "cosine": 0.9112789034843445
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9142332077026367
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9182077646255493
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8974916934967041
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.015625,
+            "cosine": 0.9162136316299438
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9112435579299927
+          },
+          {
+            "id": "300915-p8-t2-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9181742668151855
+          },
+          {
+            "id": "300915-p8-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9143260717391968
+          },
+          {
+            "id": "300915-p9-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9120726585388184
+          },
+          {
+            "id": "300915-p9-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015625,
+            "cosine": 0.9127715826034546
+          },
+          {
+            "id": "300915-p8-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.91141676902771
+          },
+          {
+            "id": "301296-p9-t3-r1",
+            "company": "新巨丰",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9151325225830078
+          },
+          {
+            "id": "301296-p9-t3-r9",
+            "company": "新巨丰",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 3,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9079907536506653
+          },
+          {
+            "id": "301296-p10-t2-r1",
+            "company": "新巨丰",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 2,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9129527807235718
+          },
+          {
+            "id": "600298-p6-t3-r1",
+            "company": "安琪酵母",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9195561408996582
+          },
+          {
+            "id": "600298-p6-t3-r9",
+            "company": "安琪酵母",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9172878265380859
+          },
+          {
+            "id": "600298-p9-t1-r1",
+            "company": "安琪酵母",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9044240713119507
+          },
+          {
+            "id": "600298-p7-t3-r1",
+            "company": "安琪酵母",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015625,
+            "cosine": 0.9099286198616028
+          },
+          {
+            "id": "600597-p6-t4-r1",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9148020148277283
+          },
+          {
+            "id": "600597-p6-t4-r9",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9106045961380005
+          },
+          {
+            "id": "600597-p7-t3-r1",
+            "company": "光明乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9068045616149902
+          },
+          {
+            "id": "600887-p7-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9109870791435242
+          },
+          {
+            "id": "600887-p7-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9198715686798096
+          },
+          {
+            "id": "600887-p8-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9092017412185669
+          },
+          {
+            "id": "600887-p8-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.015625,
+            "cosine": 0.9126343727111816
+          },
+          {
+            "id": "603711-p6-t5-r1",
+            "company": "香飘飘",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9215083718299866
+          },
+          {
+            "id": "603711-p6-t5-r9",
+            "company": "香飘飘",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 5,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9138729572296143
+          },
+          {
+            "id": "603711-p8-t1-r17",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9231441020965576
+          },
+          {
+            "id": "603711-p8-t1-r9",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9148672819137573
+          },
+          {
+            "id": "603711-p8-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 3,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9158278107643127
+          },
+          {
+            "id": "605300-p8-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9108182787895203
+          },
+          {
+            "id": "605300-p8-t2-r9",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9132570028305054
+          },
+          {
+            "id": "605300-p9-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9000763297080994
+          },
+          {
+            "id": "605339-p8-t1-r1",
+            "company": "南侨食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9126536250114441
+          },
+          {
+            "id": "605339-p8-t1-r9",
+            "company": "南侨食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9086747765541077
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 11,
+        "gold_company_count": 11,
+        "recall": [
+          {
+            "id": "002732-p7-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 7,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9139963388442993
+          },
+          {
+            "id": "002732-p7-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9127116203308105
+          },
+          {
+            "id": "002732-p8-t2-r17",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 6,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9120767116546631
+          },
+          {
+            "id": "002732-p8-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9094633460044861
+          },
+          {
+            "id": "002732-p8-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9066050052642822
+          },
+          {
+            "id": "002846-p8-t2-r1",
+            "company": "英联股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9163358211517334
+          },
+          {
+            "id": "002846-p7-t2-r1",
+            "company": "英联股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9128503203392029
+          },
+          {
+            "id": "002846-p7-t2-r9",
+            "company": "英联股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9112789034843445
+          },
+          {
+            "id": "002846-p8-t2-r9",
+            "company": "英联股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9045637845993042
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9182077646255493
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9162136316299438
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9142332077026367
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9112435579299927
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8974916934967041
+          },
+          {
+            "id": "300915-p8-t2-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9181742668151855
+          },
+          {
+            "id": "300915-p8-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9143260717391968
+          },
+          {
+            "id": "300915-p9-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9127715826034546
+          },
+          {
+            "id": "300915-p9-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9120726585388184
+          },
+          {
+            "id": "300915-p8-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.91141676902771
+          },
+          {
+            "id": "301296-p9-t3-r1",
+            "company": "新巨丰",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9151325225830078
+          },
+          {
+            "id": "301296-p10-t2-r1",
+            "company": "新巨丰",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9129527807235718
+          },
+          {
+            "id": "301296-p9-t3-r9",
+            "company": "新巨丰",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9079907536506653
+          },
+          {
+            "id": "600298-p6-t3-r1",
+            "company": "安琪酵母",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9195561408996582
+          },
+          {
+            "id": "600298-p6-t3-r9",
+            "company": "安琪酵母",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9172878265380859
+          },
+          {
+            "id": "600298-p7-t3-r1",
+            "company": "安琪酵母",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9099286198616028
+          },
+          {
+            "id": "600298-p9-t1-r1",
+            "company": "安琪酵母",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9044240713119507
+          },
+          {
+            "id": "600597-p6-t4-r1",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9148020148277283
+          },
+          {
+            "id": "600597-p6-t4-r9",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9106045961380005
+          },
+          {
+            "id": "600597-p7-t3-r1",
+            "company": "光明乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9068045616149902
+          },
+          {
+            "id": "600887-p7-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9198715686798096
+          },
+          {
+            "id": "600887-p8-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9126343727111816
+          },
+          {
+            "id": "600887-p7-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9109870791435242
+          },
+          {
+            "id": "600887-p8-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9092017412185669
+          },
+          {
+            "id": "603711-p8-t1-r17",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9231441020965576
+          },
+          {
+            "id": "603711-p6-t5-r1",
+            "company": "香飘飘",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9215083718299866
+          },
+          {
+            "id": "603711-p8-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9158278107643127
+          },
+          {
+            "id": "603711-p8-t1-r9",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9148672819137573
+          },
+          {
+            "id": "603711-p6-t5-r9",
+            "company": "香飘飘",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9138729572296143
+          },
+          {
+            "id": "605300-p8-t2-r9",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9132570028305054
+          },
+          {
+            "id": "605300-p8-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9108182787895203
+          },
+          {
+            "id": "605300-p9-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9000763297080994
+          },
+          {
+            "id": "605339-p8-t1-r1",
+            "company": "南侨食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9126536250114441
+          },
+          {
+            "id": "605339-p8-t1-r9",
+            "company": "南侨食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9086747765541077
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 11,
+        "gold_company_count": 11,
+        "recall": [
+          {
+            "id": "002732-p7-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9127116203308105
+          },
+          {
+            "id": "002732-p8-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 5,
+            "rrf": 0.03177805800756621,
+            "cosine": 0.9066050052642822
+          },
+          {
+            "id": "002732-p7-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 7,
+            "vector_rank": 1,
+            "rrf": 0.03131881575727918,
+            "cosine": 0.9139963388442993
+          },
+          {
+            "id": "002732-p8-t2-r17",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 6,
+            "vector_rank": 3,
+            "rrf": 0.031024531024531024,
+            "cosine": 0.9120767116546631
+          },
+          {
+            "id": "002732-p8-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.031009615384615385,
+            "cosine": 0.9094633460044861
+          },
+          {
+            "id": "002846-p7-t2-r1",
+            "company": "英联股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9128503203392029
+          },
+          {
+            "id": "002846-p8-t2-r1",
+            "company": "英联股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.9163358211517334
+          },
+          {
+            "id": "002846-p8-t2-r9",
+            "company": "英联股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 4,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.9045637845993042
+          },
+          {
+            "id": "002846-p7-t2-r9",
+            "company": "英联股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9112789034843445
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9182077646255493
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.9142332077026367
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.9162136316299438
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.03125763125763126,
+            "cosine": 0.8974916934967041
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.031009615384615385,
+            "cosine": 0.9112435579299927
+          },
+          {
+            "id": "300915-p8-t2-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9181742668151855
+          },
+          {
+            "id": "300915-p8-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9143260717391968
+          },
+          {
+            "id": "300915-p9-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9120726585388184
+          },
+          {
+            "id": "300915-p9-t1-r1",
+            "company": "海融科技",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9127715826034546
+          },
+          {
+            "id": "300915-p8-t1-r9",
+            "company": "海融科技",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.03076923076923077,
+            "cosine": 0.91141676902771
+          },
+          {
+            "id": "301296-p9-t3-r1",
+            "company": "新巨丰",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9151325225830078
+          },
+          {
+            "id": "301296-p9-t3-r9",
+            "company": "新巨丰",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 3,
+            "rrf": 0.03200204813108039,
+            "cosine": 0.9079907536506653
+          },
+          {
+            "id": "301296-p10-t2-r1",
+            "company": "新巨丰",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 2,
+            "rrf": 0.03200204813108039,
+            "cosine": 0.9129527807235718
+          },
+          {
+            "id": "600298-p6-t3-r1",
+            "company": "安琪酵母",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9195561408996582
+          },
+          {
+            "id": "600298-p6-t3-r9",
+            "company": "安琪酵母",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9172878265380859
+          },
+          {
+            "id": "600298-p9-t1-r1",
+            "company": "安琪酵母",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9044240713119507
+          },
+          {
+            "id": "600298-p7-t3-r1",
+            "company": "安琪酵母",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9099286198616028
+          },
+          {
+            "id": "600597-p6-t4-r1",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9148020148277283
+          },
+          {
+            "id": "600597-p6-t4-r9",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9106045961380005
+          },
+          {
+            "id": "600597-p7-t3-r1",
+            "company": "光明乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.031746031746031744,
+            "cosine": 0.9068045616149902
+          },
+          {
+            "id": "600887-p7-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9198715686798096
+          },
+          {
+            "id": "600887-p7-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.9109870791435242
+          },
+          {
+            "id": "600887-p8-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.9126343727111816
+          },
+          {
+            "id": "600887-p8-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9092017412185669
+          },
+          {
+            "id": "603711-p6-t5-r1",
+            "company": "香飘飘",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9215083718299866
+          },
+          {
+            "id": "603711-p8-t1-r17",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 1,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.9231441020965576
+          },
+          {
+            "id": "603711-p6-t5-r9",
+            "company": "香飘飘",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 5,
+            "rrf": 0.0315136476426799,
+            "cosine": 0.9138729572296143
+          },
+          {
+            "id": "603711-p8-t1-r1",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 3,
+            "rrf": 0.03125763125763126,
+            "cosine": 0.9158278107643127
+          },
+          {
+            "id": "603711-p8-t1-r9",
+            "company": "香飘飘",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 4,
+            "rrf": 0.03125,
+            "cosine": 0.9148672819137573
+          },
+          {
+            "id": "605300-p8-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9108182787895203
+          },
+          {
+            "id": "605300-p8-t2-r9",
+            "company": "佳禾食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9132570028305054
+          },
+          {
+            "id": "605300-p9-t2-r1",
+            "company": "佳禾食品",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.031746031746031744,
+            "cosine": 0.9000763297080994
+          },
+          {
+            "id": "605339-p8-t1-r1",
+            "company": "南侨食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9126536250114441
+          },
+          {
+            "id": "605339-p8-t1-r9",
+            "company": "南侨食品",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9086747765541077
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q08",
+    "type": "跨公司全景",
+    "question": "跨公司比较新乳业、光明乳业、伊利股份和燕塘乳业2025年归母净利润",
+    "expected": "新乳 731,146,914.29 元（p.9）、光明 -149,213,522 元（p.6）、伊利 11,565,166,497.81 元（p.7）、燕塘 57,625,055.83 元（p.7）。",
+    "gold_pages": {
+      "002946": [
+        9
+      ],
+      "600597": [
+        6
+      ],
+      "600887": [
+        7
+      ],
+      "002732": [
+        7
+      ]
+    },
+    "gold_values": [],
+    "verdict": "通过",
+    "actual": "四家公司均覆盖：新乳 731,146,914.29 元、光明 -149,213,522 元、伊利 11,565,166,497.81 元、燕塘 57,625,055.83 元。",
+    "error": "保留负号，未把净利润与扣非净利润或少数股东损益混淆。",
+    "recalled": [
+      {
+        "id": "002732-p7-t2-r9",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 1,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9051104187965393
+      },
+      {
+        "id": "002732-p7-t2-r1",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 3,
+        "rrf": 0.032266458495966696,
+        "cosine": 0.8984227180480957
+      },
+      {
+        "id": "002732-p8-t2-r1",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 2,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.9036650657653809
+      },
+      {
+        "id": "002732-p8-t2-r17",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 4,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.8964865207672119
+      },
+      {
+        "id": "002732-p8-t2-r9",
+        "company": "燕塘乳业",
+        "code": "002732",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 5,
+        "rrf": 0.03076923076923077,
+        "cosine": 0.8961385488510132
+      },
+      {
+        "id": "002946-p9-t3-r1",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9090527296066284
+      },
+      {
+        "id": "002946-p9-t3-r9",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 2,
+        "rrf": 0.03225806451612903,
+        "cosine": 0.9079115390777588
+      },
+      {
+        "id": "002946-p10-t2-r9",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 3,
+        "rrf": 0.03149801587301587,
+        "cosine": 0.9077578783035278
+      },
+      {
+        "id": "002946-p9-t3-r17",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 9,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 5,
+        "rrf": 0.03125763125763126,
+        "cosine": 0.8798056840896606
+      },
+      {
+        "id": "002946-p10-t2-r1",
+        "company": "新乳业",
+        "code": "002946",
+        "pdf_page": 10,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 5,
+        "vector_rank": 4,
+        "rrf": 0.031009615384615385,
+        "cosine": 0.8999179601669312
+      },
+      {
+        "id": "600597-p6-t4-r9",
+        "company": "光明乳业",
+        "code": "600597",
+        "pdf_page": 6,
+        "section": "第二节公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 2,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.8984127044677734
+      },
+      {
+        "id": "600597-p6-t4-r1",
+        "company": "光明乳业",
+        "code": "600597",
+        "pdf_page": 6,
+        "section": "第二节公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 1,
+        "rrf": 0.03252247488101534,
+        "cosine": 0.9044749736785889
+      },
+      {
+        "id": "600597-p7-t3-r1",
+        "company": "光明乳业",
+        "code": "600597",
+        "pdf_page": 7,
+        "section": "第二节公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 3,
+        "rrf": 0.031746031746031744,
+        "cosine": 0.8862982392311096
+      },
+      {
+        "id": "600887-p7-t2-r1",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164,
+        "cosine": 0.9085063338279724
+      },
+      {
+        "id": "600887-p7-t2-r9",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 7,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 2,
+        "vector_rank": 4,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.8854835033416748
+      },
+      {
+        "id": "600887-p8-t2-r1",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 4,
+        "vector_rank": 2,
+        "rrf": 0.031754032258064516,
+        "cosine": 0.8988094329833984
+      },
+      {
+        "id": "600887-p8-t2-r9",
+        "company": "伊利股份",
+        "code": "600887",
+        "pdf_page": 8,
+        "section": "第二节 公司简介和主要财务指标",
+        "kind": "table",
+        "bm25_rank": 3,
+        "vector_rank": 3,
+        "rrf": 0.031746031746031744,
+        "cosine": 0.890012800693512
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 4,
+        "gold_company_count": 4,
+        "recall": [
+          {
+            "id": "002732-p7-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.8984227180480957
+          },
+          {
+            "id": "002732-p7-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9051104187965393
+          },
+          {
+            "id": "002732-p8-t2-r17",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8964865207672119
+          },
+          {
+            "id": "002732-p8-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.015625,
+            "cosine": 0.9036650657653809
+          },
+          {
+            "id": "002732-p8-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8961385488510132
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9090527296066284
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9079115390777588
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8798056840896606
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015625,
+            "cosine": 0.9077578783035278
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8999179601669312
+          },
+          {
+            "id": "600597-p6-t4-r9",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.8984127044677734
+          },
+          {
+            "id": "600597-p6-t4-r1",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9044749736785889
+          },
+          {
+            "id": "600597-p7-t3-r1",
+            "company": "光明乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8862982392311096
+          },
+          {
+            "id": "600887-p7-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9085063338279724
+          },
+          {
+            "id": "600887-p7-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 4,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8854835033416748
+          },
+          {
+            "id": "600887-p8-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.890012800693512
+          },
+          {
+            "id": "600887-p8-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.015625,
+            "cosine": 0.8988094329833984
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 4,
+        "gold_company_count": 4,
+        "recall": [
+          {
+            "id": "002732-p7-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9051104187965393
+          },
+          {
+            "id": "002732-p8-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9036650657653809
+          },
+          {
+            "id": "002732-p7-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8984227180480957
+          },
+          {
+            "id": "002732-p8-t2-r17",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.8964865207672119
+          },
+          {
+            "id": "002732-p8-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8961385488510132
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9090527296066284
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9079115390777588
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9077578783035278
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.8999179601669312
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8798056840896606
+          },
+          {
+            "id": "600597-p6-t4-r1",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9044749736785889
+          },
+          {
+            "id": "600597-p6-t4-r9",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8984127044677734
+          },
+          {
+            "id": "600597-p7-t3-r1",
+            "company": "光明乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8862982392311096
+          },
+          {
+            "id": "600887-p7-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9085063338279724
+          },
+          {
+            "id": "600887-p8-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8988094329833984
+          },
+          {
+            "id": "600887-p8-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.890012800693512
+          },
+          {
+            "id": "600887-p7-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.8854835033416748
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 4,
+        "gold_company_count": 4,
+        "recall": [
+          {
+            "id": "002732-p7-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9051104187965393
+          },
+          {
+            "id": "002732-p7-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 3,
+            "rrf": 0.032266458495966696,
+            "cosine": 0.8984227180480957
+          },
+          {
+            "id": "002732-p8-t2-r1",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.9036650657653809
+          },
+          {
+            "id": "002732-p8-t2-r17",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 4,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.8964865207672119
+          },
+          {
+            "id": "002732-p8-t2-r9",
+            "company": "燕塘乳业",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 5,
+            "rrf": 0.03076923076923077,
+            "cosine": 0.8961385488510132
+          },
+          {
+            "id": "002946-p9-t3-r1",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9090527296066284
+          },
+          {
+            "id": "002946-p9-t3-r9",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 2,
+            "rrf": 0.03225806451612903,
+            "cosine": 0.9079115390777588
+          },
+          {
+            "id": "002946-p10-t2-r9",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 3,
+            "rrf": 0.03149801587301587,
+            "cosine": 0.9077578783035278
+          },
+          {
+            "id": "002946-p9-t3-r17",
+            "company": "新乳业",
+            "pdf_page": 9,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 5,
+            "rrf": 0.03125763125763126,
+            "cosine": 0.8798056840896606
+          },
+          {
+            "id": "002946-p10-t2-r1",
+            "company": "新乳业",
+            "pdf_page": 10,
+            "kind": "table",
+            "bm25_rank": 5,
+            "vector_rank": 4,
+            "rrf": 0.031009615384615385,
+            "cosine": 0.8999179601669312
+          },
+          {
+            "id": "600597-p6-t4-r9",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 2,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.8984127044677734
+          },
+          {
+            "id": "600597-p6-t4-r1",
+            "company": "光明乳业",
+            "pdf_page": 6,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 1,
+            "rrf": 0.03252247488101534,
+            "cosine": 0.9044749736785889
+          },
+          {
+            "id": "600597-p7-t3-r1",
+            "company": "光明乳业",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.031746031746031744,
+            "cosine": 0.8862982392311096
+          },
+          {
+            "id": "600887-p7-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 1,
+            "vector_rank": 1,
+            "rrf": 0.03278688524590164,
+            "cosine": 0.9085063338279724
+          },
+          {
+            "id": "600887-p7-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 7,
+            "kind": "table",
+            "bm25_rank": 2,
+            "vector_rank": 4,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.8854835033416748
+          },
+          {
+            "id": "600887-p8-t2-r1",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 4,
+            "vector_rank": 2,
+            "rrf": 0.031754032258064516,
+            "cosine": 0.8988094329833984
+          },
+          {
+            "id": "600887-p8-t2-r9",
+            "company": "伊利股份",
+            "pdf_page": 8,
+            "kind": "table",
+            "bm25_rank": 3,
+            "vector_rank": 3,
+            "rrf": 0.031746031746031744,
+            "cosine": 0.890012800693512
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q09",
+    "type": "证据边界",
+    "question": "仅凭2025年财报，瑞幸咖啡明年股价一定会上涨吗？",
+    "expected": "应拒绝确定预测；2025 财报不能证明未来股价一定上涨。拒答也需与问题匹配。",
+    "gold_pages": {},
+    "gold_values": [],
+    "verdict": "通过",
+    "actual": "明确拒绝从历史财报推断未来股价一定上涨，随后仅展示历史证据。",
+    "error": "这是边界题，单列；拒答不代表已回答了预测问题。",
+    "recalled": [
+      {
+        "id": "LKNCY-p202-x7",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 202,
+        "section": "Item 19. Exhibits",
+        "kind": "text",
+        "bm25_rank": 4,
+        "vector_rank": 12,
+        "rrf": 0.029513888888888888,
+        "cosine": 0.8918401002883911
+      },
+      {
+        "id": "LKNCY-p203-x7",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 203,
+        "section": "Item 19. Exhibits",
+        "kind": "text",
+        "bm25_rank": 15,
+        "vector_rank": 2,
+        "rrf": 0.02946236559139785,
+        "cosine": 0.9004482626914978
+      },
+      {
+        "id": "LKNCY-p135-x5",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 135,
+        "section": "Item 6. Directors, Senior Management and Employees",
+        "kind": "text",
+        "bm25_rank": 2,
+        "vector_rank": 22,
+        "rrf": 0.02832415420928403,
+        "cosine": 0.8888722658157349
+      },
+      {
+        "id": "LKNCY-p151-x5",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 151,
+        "section": "Item 10. Additional Information",
+        "kind": "text",
+        "bm25_rank": 6,
+        "vector_rank": 17,
+        "rrf": 0.02813852813852814,
+        "cosine": 0.8900081515312195
+      },
+      {
+        "id": "LKNCY-p202-x6",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 202,
+        "section": "Item 19. Exhibits",
+        "kind": "text",
+        "bm25_rank": 16,
+        "vector_rank": 7,
+        "rrf": 0.028083267871170464,
+        "cosine": 0.8952292203903198
+      },
+      {
+        "id": "LKNCY-p40-x3",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 40,
+        "section": "Item 3. Key Information",
+        "kind": "text",
+        "bm25_rank": 11,
+        "vector_rank": 13,
+        "rrf": 0.027783137179239824,
+        "cosine": 0.8912236094474792
+      },
+      {
+        "id": "LKNCY-p1-x9",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 1,
+        "section": "封面与前言",
+        "kind": "text",
+        "bm25_rank": 28,
+        "vector_rank": 1,
+        "rrf": 0.027757078986587184,
+        "cosine": 0.9012292623519897
+      },
+      {
+        "id": "LKNCY-p223-x9",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 223,
+        "section": "Item 19. Exhibits",
+        "kind": "text",
+        "bm25_rank": 9,
+        "vector_rank": 25,
+        "rrf": 0.02625745950554135,
+        "cosine": 0.8879786729812622
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 0,
+        "gold_company_count": 0,
+        "recall": [
+          {
+            "id": "LKNCY-p200-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 200,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": null,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.8760693073272705
+          },
+          {
+            "id": "LKNCY-p135-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 135,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 22,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8888722658157349
+          },
+          {
+            "id": "LKNCY-p134-x8",
+            "company": "瑞幸咖啡",
+            "pdf_page": 134,
+            "kind": "text",
+            "bm25_rank": 3,
+            "vector_rank": null,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8800514340400696
+          },
+          {
+            "id": "LKNCY-p202-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 202,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 12,
+            "rrf": 0.015625,
+            "cosine": 0.8918401002883911
+          },
+          {
+            "id": "LKNCY-p133-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 133,
+            "kind": "text",
+            "bm25_rank": 5,
+            "vector_rank": 37,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8862507343292236
+          },
+          {
+            "id": "LKNCY-p151-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 151,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 17,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8900081515312195
+          },
+          {
+            "id": "LKNCY-p56-x8",
+            "company": "瑞幸咖啡",
+            "pdf_page": 56,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": null,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.8716115951538086
+          },
+          {
+            "id": "LKNCY-p199-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 199,
+            "kind": "text",
+            "bm25_rank": 8,
+            "vector_rank": null,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.874860405921936
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 0,
+        "gold_company_count": 0,
+        "recall": [
+          {
+            "id": "LKNCY-p1-x9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 1,
+            "kind": "text",
+            "bm25_rank": 28,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9012292623519897
+          },
+          {
+            "id": "LKNCY-p203-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 203,
+            "kind": "text",
+            "bm25_rank": 15,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.9004482626914978
+          },
+          {
+            "id": "LKNCY-p11-x4",
+            "company": "瑞幸咖啡",
+            "pdf_page": 11,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8976047039031982
+          },
+          {
+            "id": "LKNCY-p217-x3",
+            "company": "瑞幸咖啡",
+            "pdf_page": 217,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.8964385986328125
+          },
+          {
+            "id": "LKNCY-p129-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 129,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.8959766626358032
+          },
+          {
+            "id": "LKNCY-p200-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 200,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 6,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8955223560333252
+          },
+          {
+            "id": "LKNCY-p202-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 202,
+            "kind": "text",
+            "bm25_rank": 16,
+            "vector_rank": 7,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.8952292203903198
+          },
+          {
+            "id": "LKNCY-p1-x8",
+            "company": "瑞幸咖啡",
+            "pdf_page": 1,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 8,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.8943113684654236
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 0,
+        "gold_company_count": 0,
+        "recall": [
+          {
+            "id": "LKNCY-p202-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 202,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": 12,
+            "rrf": 0.029513888888888888,
+            "cosine": 0.8918401002883911
+          },
+          {
+            "id": "LKNCY-p203-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 203,
+            "kind": "text",
+            "bm25_rank": 15,
+            "vector_rank": 2,
+            "rrf": 0.02946236559139785,
+            "cosine": 0.9004482626914978
+          },
+          {
+            "id": "LKNCY-p135-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 135,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": 22,
+            "rrf": 0.02832415420928403,
+            "cosine": 0.8888722658157349
+          },
+          {
+            "id": "LKNCY-p151-x5",
+            "company": "瑞幸咖啡",
+            "pdf_page": 151,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": 17,
+            "rrf": 0.02813852813852814,
+            "cosine": 0.8900081515312195
+          },
+          {
+            "id": "LKNCY-p202-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 202,
+            "kind": "text",
+            "bm25_rank": 16,
+            "vector_rank": 7,
+            "rrf": 0.028083267871170464,
+            "cosine": 0.8952292203903198
+          },
+          {
+            "id": "LKNCY-p40-x3",
+            "company": "瑞幸咖啡",
+            "pdf_page": 40,
+            "kind": "text",
+            "bm25_rank": 11,
+            "vector_rank": 13,
+            "rrf": 0.027783137179239824,
+            "cosine": 0.8912236094474792
+          },
+          {
+            "id": "LKNCY-p1-x9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 1,
+            "kind": "text",
+            "bm25_rank": 28,
+            "vector_rank": 1,
+            "rrf": 0.027757078986587184,
+            "cosine": 0.9012292623519897
+          },
+          {
+            "id": "LKNCY-p223-x9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 223,
+            "kind": "text",
+            "bm25_rank": 9,
+            "vector_rank": 25,
+            "rrf": 0.02625745950554135,
+            "cosine": 0.8879786729812622
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  },
+  {
+    "id": "Q10",
+    "type": "单位与英文财表",
+    "question": "瑞幸咖啡2025年总净收入是多少人民币元？",
+    "expected": "49,288,095 千元，即 49,288,095,000 人民币元；不能把千元原数当人民币元，也不能把同年美元换算列另加一次。依据 PDF 第 108 页。",
+    "gold_pages": {
+      "LKNCY": [
+        108
+      ]
+    },
+    "gold_values": [],
+    "verdict": "部分通过",
+    "actual": "召回 p.113 的收入讨论，给出 RMB49,288.1 million 等相关文字，但没有明确换算成精确的人民币元金额。",
+    "error": "无框线多层表头、千元/百万元/美元列并存；BM25 命中标准参考页 p.108，向量和混合未命中该页。混合检索并非总优于单路。",
+    "recalled": [
+      {
+        "id": "LKNCY-p113-x15",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 113,
+        "section": "Item 5. Operating and Financial Review and Prospects",
+        "kind": "text",
+        "bm25_rank": 32,
+        "vector_rank": 2,
+        "rrf": 0.02699859747545582,
+        "cosine": 0.912330687046051
+      },
+      {
+        "id": "LKNCY-p183-b2-r1",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 183,
+        "section": "Item 19. Exhibits",
+        "kind": "table",
+        "bm25_rank": 25,
+        "vector_rank": 7,
+        "rrf": 0.0266900790166813,
+        "cosine": 0.9092634320259094
+      },
+      {
+        "id": "LKNCY-p181-b2-r9",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 181,
+        "section": "Item 19. Exhibits",
+        "kind": "table",
+        "bm25_rank": 19,
+        "vector_rank": 15,
+        "rrf": 0.0259915611814346,
+        "cosine": 0.9079681634902954
+      },
+      {
+        "id": "LKNCY-p183-b2-r9",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 183,
+        "section": "Item 19. Exhibits",
+        "kind": "table",
+        "bm25_rank": 21,
+        "vector_rank": 19,
+        "rrf": 0.025003906860446942,
+        "cosine": 0.9069639444351196
+      },
+      {
+        "id": "LKNCY-p210-x2",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 210,
+        "section": "Item 19. Exhibits",
+        "kind": "text",
+        "bm25_rank": 38,
+        "vector_rank": 10,
+        "rrf": 0.024489795918367346,
+        "cosine": 0.9090903997421265
+      },
+      {
+        "id": "LKNCY-p182-b2-r1",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 182,
+        "section": "Item 19. Exhibits",
+        "kind": "table",
+        "bm25_rank": 24,
+        "vector_rank": 23,
+        "rrf": 0.023952954675846242,
+        "cosine": 0.9066823124885559
+      },
+      {
+        "id": "LKNCY-p182-x10",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 182,
+        "section": "Item 19. Exhibits",
+        "kind": "text",
+        "bm25_rank": 16,
+        "vector_rank": 40,
+        "rrf": 0.023157894736842106,
+        "cosine": 0.9046343564987183
+      },
+      {
+        "id": "LKNCY-p181-b2-r1",
+        "company": "瑞幸咖啡",
+        "code": "LKNCY",
+        "pdf_page": 181,
+        "section": "Item 19. Exhibits",
+        "kind": "table",
+        "bm25_rank": 28,
+        "vector_rank": 26,
+        "rrf": 0.02299154334038055,
+        "cosine": 0.9061117172241211
+      }
+    ],
+    "comparison": [
+      {
+        "mode": "bm25",
+        "gold_company_page_coverage": 1,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "LKNCY-p113-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 113,
+            "kind": "text",
+            "bm25_rank": 1,
+            "vector_rank": null,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9037491679191589
+          },
+          {
+            "id": "LKNCY-p186-x1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 186,
+            "kind": "text",
+            "bm25_rank": 2,
+            "vector_rank": null,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.8952468633651733
+          },
+          {
+            "id": "LKNCY-p108-x10",
+            "company": "瑞幸咖啡",
+            "pdf_page": 108,
+            "kind": "text",
+            "bm25_rank": 3,
+            "vector_rank": null,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.8966026306152344
+          },
+          {
+            "id": "LKNCY-p212-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 212,
+            "kind": "text",
+            "bm25_rank": 4,
+            "vector_rank": null,
+            "rrf": 0.015625,
+            "cosine": 0.8922641277313232
+          },
+          {
+            "id": "LKNCY-p174-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 174,
+            "kind": "text",
+            "bm25_rank": 5,
+            "vector_rank": null,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9015141725540161
+          },
+          {
+            "id": "LKNCY-p109-x4",
+            "company": "瑞幸咖啡",
+            "pdf_page": 109,
+            "kind": "text",
+            "bm25_rank": 6,
+            "vector_rank": null,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.8996268510818481
+          },
+          {
+            "id": "LKNCY-p125-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 125,
+            "kind": "text",
+            "bm25_rank": 7,
+            "vector_rank": null,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.8926118612289429
+          },
+          {
+            "id": "LKNCY-p126-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 126,
+            "kind": "text",
+            "bm25_rank": 8,
+            "vector_rank": null,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.895624577999115
+          }
+        ]
+      },
+      {
+        "mode": "vector",
+        "gold_company_page_coverage": 0,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "LKNCY-p179-x7",
+            "company": "瑞幸咖啡",
+            "pdf_page": 179,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 1,
+            "rrf": 0.01639344262295082,
+            "cosine": 0.9147740006446838
+          },
+          {
+            "id": "LKNCY-p113-x15",
+            "company": "瑞幸咖啡",
+            "pdf_page": 113,
+            "kind": "text",
+            "bm25_rank": 32,
+            "vector_rank": 2,
+            "rrf": 0.016129032258064516,
+            "cosine": 0.912330687046051
+          },
+          {
+            "id": "LKNCY-p121-x9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 121,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 3,
+            "rrf": 0.015873015873015872,
+            "cosine": 0.9121208786964417
+          },
+          {
+            "id": "LKNCY-p121-x6",
+            "company": "瑞幸咖啡",
+            "pdf_page": 121,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 4,
+            "rrf": 0.015625,
+            "cosine": 0.9116647243499756
+          },
+          {
+            "id": "LKNCY-p114-x3",
+            "company": "瑞幸咖啡",
+            "pdf_page": 114,
+            "kind": "text",
+            "bm25_rank": null,
+            "vector_rank": 5,
+            "rrf": 0.015384615384615385,
+            "cosine": 0.9101895093917847
+          },
+          {
+            "id": "LKNCY-p183-b1-r9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 183,
+            "kind": "table",
+            "bm25_rank": null,
+            "vector_rank": 6,
+            "rrf": 0.015151515151515152,
+            "cosine": 0.909717321395874
+          },
+          {
+            "id": "LKNCY-p183-b2-r1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 183,
+            "kind": "table",
+            "bm25_rank": 25,
+            "vector_rank": 7,
+            "rrf": 0.014925373134328358,
+            "cosine": 0.9092634320259094
+          },
+          {
+            "id": "LKNCY-p183-b1-r1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 183,
+            "kind": "table",
+            "bm25_rank": null,
+            "vector_rank": 8,
+            "rrf": 0.014705882352941176,
+            "cosine": 0.9091375470161438
+          }
+        ]
+      },
+      {
+        "mode": "hybrid",
+        "gold_company_page_coverage": 0,
+        "gold_company_count": 1,
+        "recall": [
+          {
+            "id": "LKNCY-p113-x15",
+            "company": "瑞幸咖啡",
+            "pdf_page": 113,
+            "kind": "text",
+            "bm25_rank": 32,
+            "vector_rank": 2,
+            "rrf": 0.02699859747545582,
+            "cosine": 0.912330687046051
+          },
+          {
+            "id": "LKNCY-p183-b2-r1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 183,
+            "kind": "table",
+            "bm25_rank": 25,
+            "vector_rank": 7,
+            "rrf": 0.0266900790166813,
+            "cosine": 0.9092634320259094
+          },
+          {
+            "id": "LKNCY-p181-b2-r9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 181,
+            "kind": "table",
+            "bm25_rank": 19,
+            "vector_rank": 15,
+            "rrf": 0.0259915611814346,
+            "cosine": 0.9079681634902954
+          },
+          {
+            "id": "LKNCY-p183-b2-r9",
+            "company": "瑞幸咖啡",
+            "pdf_page": 183,
+            "kind": "table",
+            "bm25_rank": 21,
+            "vector_rank": 19,
+            "rrf": 0.025003906860446942,
+            "cosine": 0.9069639444351196
+          },
+          {
+            "id": "LKNCY-p210-x2",
+            "company": "瑞幸咖啡",
+            "pdf_page": 210,
+            "kind": "text",
+            "bm25_rank": 38,
+            "vector_rank": 10,
+            "rrf": 0.024489795918367346,
+            "cosine": 0.9090903997421265
+          },
+          {
+            "id": "LKNCY-p182-b2-r1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 182,
+            "kind": "table",
+            "bm25_rank": 24,
+            "vector_rank": 23,
+            "rrf": 0.023952954675846242,
+            "cosine": 0.9066823124885559
+          },
+          {
+            "id": "LKNCY-p182-x10",
+            "company": "瑞幸咖啡",
+            "pdf_page": 182,
+            "kind": "text",
+            "bm25_rank": 16,
+            "vector_rank": 40,
+            "rrf": 0.023157894736842106,
+            "cosine": 0.9046343564987183
+          },
+          {
+            "id": "LKNCY-p181-b2-r1",
+            "company": "瑞幸咖啡",
+            "pdf_page": 181,
+            "kind": "table",
+            "bm25_rank": 28,
+            "vector_rank": 26,
+            "rrf": 0.02299154334038055,
+            "cosine": 0.9061117172241211
+          }
+        ]
+      }
+    ],
+    "review_method": "逐题将实际回答和引用页与原始 PDF 文字/表格复核；由 agent 复核，未经用户独立盲审。"
+  }
+]

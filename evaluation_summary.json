@@ -1,0 +1,20 @@
+{
+  "questions": 10,
+  "passed": 9,
+  "partial": 1,
+  "wrong": 0,
+  "boundary_questions": 1,
+  "factual_passed": 8,
+  "factual_total": 9,
+  "panoramic_questions": 2,
+  "panoramic_passed": 2,
+  "development_set": true,
+  "reviewer": "agent",
+  "review": "gold references fixed before evaluation; query normalization improved on this same development set; no held-out generalization claim",
+  "reference_company_pages": 22,
+  "coverage_by_mode": {
+    "bm25": 22,
+    "vector": 21,
+    "hybrid": 21
+  }
+}

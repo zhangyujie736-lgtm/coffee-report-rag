@@ -1,0 +1,6 @@
+numpy>=2.2,<3
+PyMuPDF>=1.26,<2
+onnxruntime>=1.22,<2
+tokenizers>=0.21,<1
+jieba==0.42.1
+reportlab>=4,<5
